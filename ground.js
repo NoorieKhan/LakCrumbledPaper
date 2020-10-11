@@ -16,7 +16,7 @@ class ground{
         push ();
         translate(pos.x,pos.y);
         rectMode(CENTER)
-        fill ("white");
+        fill ("green");
         rect(0,0,this.width,this.height);
         pop ();
 

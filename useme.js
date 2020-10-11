@@ -3,25 +3,24 @@ class useme{
         var options={
             isStatic:true
         }
-        this.body=Bodies.rectangle(x,y,width,height,angle,options);
-        this.width=width,
-        this.height=height;
-        this.x=x;
-        this.y=y;
+
+this.width= width;
+this.height=height;
+        this.body=Bodies.rectangle(x,y,width,height,options);
         
-        Matter.Body.setAngle(this.body,angle)
-       
+             
         World.add(world,this.body);
     }
 
     display(){
         var pos=this.body.position;
-        push ();
+	//var angle = this.body.angle;
+        push();
         translate(pos.x,pos.y);
-        rotate (this.angle);
+       //rotate (angle);
         rectMode(CENTER);
-        fill ("red")
-        rect(pos.x,pos.y,this.width,this.height)
+        fill ("yellow")
+        rect(0,0,this.width,this.height)
         pop ();
     }
 }
