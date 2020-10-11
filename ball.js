@@ -19,7 +19,7 @@ this.y= y;
        translate(pos.x,pos.y);
        
        rectMode(CENTER);
-       fill ("purple");
+       fill ("red");
        ellipse(0,0,this.radius,this.radius);
        pop ();
     }
